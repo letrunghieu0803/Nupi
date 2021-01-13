@@ -1,0 +1,20 @@
+.App {
+  height: 100vh;
+  background-image: url(https://hedieuhanh.com/wp-content/uploads/2019/05/hinh-nen-de-thuong-cute-nhat_115833412.jpg);
+}
+
+.btn-back{
+  width: fit-content;
+  font-size: 12px !important;
+  padding: 2px !important;
+  margin: 5px;
+}
+
+#items-play{
+ min-height: 60vh;;
+}
+
+#btn-nolimit{
+  min-width: 161px !important;
+  margin-bottom: 5vh;
+}
