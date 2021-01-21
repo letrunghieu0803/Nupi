@@ -171,11 +171,7 @@
   animation: fadeInDown 1s ease-in; }
 
 /* fadeOut */
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+
 @-moz-keyframes fadeIn {
   0% {
     opacity: 1; }

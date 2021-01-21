@@ -5,6 +5,8 @@ import History from "./pages/History/main";
 import Library from "./pages/LibraryPic/main";
 import Stage1 from "./pages/Play/stageOne/main";
 import Stage2 from "./pages/Play/stageTwo/main";
+import Login from "./pages/Login/main"
+import GameOver from "./pages/GameOver/main"
 
 
 // import React, { useState, useEffect, useMemo } from "react";
@@ -14,6 +16,7 @@ import AuthLayOut from "./components/LayOut/AuthLayOut";
 import "./App.css";
 
 export default function App() {
+  
   const currentView = useSelector(state => state.changeView);
   console.log(currentView);
   return (
@@ -26,8 +29,9 @@ export default function App() {
       {currentView === "library" ? <Library /> : null}
       {currentView === "stage1" ? <Stage1 /> : null}
       {currentView === "stage2" ? <Stage2 /> : null}
-
-
+      {currentView === "login" ? <Login /> : null}
+      {currentView === "gameover" ? <GameOver /> : null}
     </div>
   );
 }
+ 

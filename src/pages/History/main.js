@@ -9,7 +9,7 @@ function History() {
 
   return (
     <div>
-      <div className="d-flex justify-content-end">
+      <div className="d-flex justify-content-start">
         <Button
           className="btn-back"
           onClick={() => {
@@ -31,16 +31,28 @@ function History() {
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Định mức 5 Level</td>
+              <td>21/1/2021</td>
+              <td>2</td>
+              <td>55</td>
             </tr>
             <tr>
+              <td>Định mức 10 Level</td>
+              <td>21/1/2021</td>
               <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Vô hạn</td>
+              <td>21/1/2021</td>
+              <td>3</td>
+              <td>115</td>
+            </tr>
+            <tr>
+              <td>Vô hạn</td>
+              <td>21/1/2021</td>
+              <td>2</td>
+              <td>45</td>
             </tr>
           </tbody>
         </Table>

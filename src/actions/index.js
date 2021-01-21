@@ -13,6 +13,11 @@ export const playPage =()=>{
         type :  'PLAY'
     }
 }
+export const loginPage =()=>{
+    return {
+        type :  'LOGIN'
+    }
+}
 
 export const libraryPage =()=>{
     return {
@@ -37,14 +42,40 @@ export const stage2Page =()=>{
         type :  'S2'
     }
 }
+
+export const gameOverPage =()=>{
+    return {
+        type :  'GOVER'
+    }
+}
+
 export const increLevel =()=>{
     return {
         type :  'INCRE'
     }
 }
 
-export const setLevel =()=>{
+export const setDataReduce =(data)=>{
     return {
-        type :  'SET'
+        type :  'SET',
+        value : data
+    }
+}
+export const setDataLevel =(data)=>{
+    return {
+        type :  'SET',
+        value : data
+    }
+}
+
+export const loginSuccsess =()=>{
+    return {
+        type :  'LOGINSUC'
+    }
+}
+
+export const logoutSuccsess =()=>{
+    return {
+        type :  'LOGOUTSUC'
     }
 }

@@ -10,7 +10,7 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -32,6 +32,22 @@
       crossorigin
     ></script>
 
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-authentication.js"></script>
+
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAa1WmRGrMfmUut-SABEMmt0p9EfbaG-1w",
+        authDomain: "api-animal-pj.firebaseapp.com",
+        projectId: "api-animal-pj",
+        storageBucket: "api-animal-pj.appspot.com",
+        messagingSenderId: "900959752599",
+        appId: "1:900959752599:web:8629da54905fc3000cf4d2",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script>
       var Alert = ReactBootstrap.Alert;
     </script>
@@ -41,6 +57,5 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-   
   </body>
 </html>

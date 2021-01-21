@@ -2,18 +2,19 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 import { homePage } from "../../actions";
-import { Button, Card, CardColumns } from "react-bootstrap";
-
+import { Button, Image, Row, Col } from "react-bootstrap";
+import dataJson from "../../data.json"
+import "./style.css"
 // Chức năng show màn ảnh các con vật được sưu tầm
 
 function Library() {
   const disPatch = useDispatch();
 
   return (
-    <div>
-      <div className="d-flex justify-content-end">
+    <div className="main-library">
+      <div className="d-flex justify-content-start">
         <Button
-          className="btn-back"
+          className="btn-back "
           onClick={() => {
             disPatch(homePage());
           }}
@@ -21,103 +22,26 @@ function Library() {
           Trở về
         </Button>
       </div>
-      <div className="d-flex flex-column">
-        <CardColumns>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title that wraps to a new line</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="p-3">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-          <Card bg="primary" text="white" className="text-center p-3">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card className="text-center">
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-              <Card.Text>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img src="holder.js/100px160" />
-          </Card>
-          <Card className="text-right">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </Card.Text>
-              <Card.Text>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </CardColumns>
+      <div className="d-flex flex-column nowrap">
+        <div>
+        <Image className="col-12 col-sm-6 col-md-4 image-library" src={dataJson[0].url} rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[1].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[2].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library" src={dataJson[3].url} rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[4].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[5].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[6].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[7].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[8].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[9].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[10].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[12].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[13].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[14].url}  rounded />
+            <Image className="col-12 col-sm-6 col-md-4 image-library"  src={dataJson[15].url}  rounded />
+
+        </div>
+            
       </div>
     </div>
   );

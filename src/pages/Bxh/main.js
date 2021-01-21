@@ -1,17 +1,16 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-
 import { homePage } from "../../actions";
 import { Button, Table } from "react-bootstrap";
-
+import "./style.css"
 // Chức năng chính là tổng hợp và xếp hạng điểm của người chơi
 
 function Bxh() {
   const disPatch = useDispatch();
 
   return (
-    <div>
-      <div className="d-flex justify-content-end">
+    <div className="u--fadeInLeft nowrap">
+      <div className="d-flex justify-content-start">
         <Button
           className="btn-back"
           onClick={() => {
@@ -33,16 +32,22 @@ function Bxh() {
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td className="col-2">1</td>
+              <td className="col-6">letrunghieu08031998@gmail.com</td>
+              <td className="col-2">3</td>
+              <td className="col-2">115</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td className="col-2">2</td>
+              <td className="col-6">letrunghieu08031998@gmail.com</td>
+              <td className="col-2">2</td>
+              <td className="col-2">45</td>
+            </tr>
+            <tr>
+              <td className="col-2">3</td>
+              <td className="col-6">hieukusanagi9x@gmail.com</td>
+              <td className="col-2">1</td>
+              <td className="col-2">15</td>
             </tr>
           </tbody>
         </Table>

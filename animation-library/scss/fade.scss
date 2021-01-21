@@ -134,10 +134,7 @@ $ANIMATION_DURATION: 1s;
 
 // Fade Out
 //--------------------------------//
-@-webkit-keyframes fadeOut {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
-}
+
 @-moz-keyframes fadeIn {
   0%   { opacity: 1; }
   100% { opacity: 0; }

@@ -16,8 +16,12 @@ const ChangeViewReducer = (state = "home", action) => {
       return (state = "stage1");
     case "S2":
       return (state = "stage2");
+      case "LOGIN":
+      return (state = "login");
+      case "GOVER":
+      return (state = "gameover");
     default:
-      return "stage1";
+      return "home";
   }
 };
 
